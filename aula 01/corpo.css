@@ -1,0 +1,38 @@
+h1{
+    color: black;
+    text-align: center;
+}
+h1#titulo_especial {
+    color: rgb(14, 13, 14);
+
+}
+
+.destaque {  
+
+    background-color: blueviolet;
+}
+
+p.destaque{
+    font-weight: bold;
+
+}
+.cor-primaria{ 
+    color:rgb(174, 87, 245);
+
+
+
+}
+
+.cor-secundaria{
+    color:rgb(231, 199, 250);
+
+    
+}
+ 
+*{font-family: 'Courier New', Courier, monospace;
+
+}
+
+.quadro{
+    background-color: aqua;
+}
