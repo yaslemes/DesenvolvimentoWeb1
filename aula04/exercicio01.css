@@ -1,0 +1,15 @@
+.texto-centralizado {
+    text-align: center;
+}
+
+.fonte{
+    font-size: 2em;
+}
+
+.borda{
+    border: 2px solid;
+}
+
+.corborda{
+    background-color: yellow;
+}
