@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+
+    <style>
+        ul , .disciplinas {
+            list-style-type: disc;
+        }
+
+        .menu {
+            list-style-type: none;
+            margin-left: 5px;
+        }
+
+        .menu li {
+            background-color: rgb(118, 150, 255);
+            border: 2px solid rgb(5, 22, 150);
+            margin-bottom: 6px;
+            margin: 10px 0;
+
+            padding: 10px;
+            width: 150px;
+            box-sizing: border-box;
+
+            text-align: center;
+
+            transition: 0.3s;
+
+            border-radius: 10px;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .menu li:hover {
+            background-color: rgb(5, 22, 150);
+            color: rgb(118, 150, 255);
+            cursor: pointer;
+            border-color: rgb(118, 150, 255);
+            padding: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: blue;
+            background-color: rgb(164, 190, 253);
+            border: 1px solid blue;
+            border-radius: 4px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Listas Ordenadas</h1>
+
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <h1>Listas Não Ordenadas</h1>
+
+    <ul class="disciplinhas">
+        <li> Desenvolvimento Web 1
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Java Script</li>
+            </ul>
+        </li>
+        <li>Instalação e Manutenção de Computadores</li>
+        <li>Banco de Dados</li>
+    </ul>
+
+    <h1>Listas Personalizada</h1>
+    <ul class="menu">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</i>
+    </ul>
+    <p>Clique <a href="https://www.utfpr.edu.br">aqui</a> para acessar o site da UTFPR</p>
+
+    <p>link gradiente: <a href="gradiente_listas.html">CLIQUE</a></p>
+
+</body>
+</html>
