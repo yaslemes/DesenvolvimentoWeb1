@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+    
+        :root {
+            --cor-fundo: #461220;
+            --cor-primaria: #FCB9B2;
+            --cor-secundaria:#B23A48; 
+
+            --fonte-principal:20px "Merriweather", serif;
+            --fonte-destaque:30px         "Bebas Neue", sans-serif;
+            --altura-cabeçalho:50px;
+
+         }
+
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: var(--cor-fundo);
+            font: var(--fonte-principal)
+        }
+
+
+
+        .card{
+          background-color: var(--cor-secundaria);
+          border: 1px solid var(--cor-primaria);
+          padding: 10px;
+          height: calc(100vh - var(--altura-cabeçalho));
+          /*border-radius: 10px;*/
+         /*margin: 10px;*/
+          
+         
+        }
+
+        .card h1{
+            font: var(--fonte-destaque);
+            color: var(--cor-primaria);
+            margin-bottom: 10px;
+            
+        }
+
+        .card ul{
+            margin-left: 15px;
+            color:white;
+        }
+
+        .cabeçalho{
+            background-color: var(--cor-secundaria);
+            height: var(--altura-cabeçalho);
+            overflow-y: scroll;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cabeçalho">
+            <p>Cabeçalho</p>
+            <p>Cabeçalho</p>
+            <p>Cabeçalho</p>
+            <p>Cabeçalho</p>
+            <p>Cabeçalho</p>
+            <p>Cabeçalho</p>
+            <p>Cabeçalho</p>
+            <p>Cabeçalho</p>
+        </div>
+        
+        <div class="card">
+            <h1>Lista de Tarefas</h1>
+            <ul>
+                <li>Tarefa 1</li>
+                <li>Tarefa 2</li>
+                <li>Tarefa 3</li>
+        
+            </ul>
+        </div>
+    </div>
+
+    
+</body>
+</html>
