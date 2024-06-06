@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .container{
+            background-color: gray;
+            width: 100vw;
+            height: 100vh;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+
+         
+             
+        }
+    
+        .box{
+            width: 6.25rem;
+            height: 6.25rem;
+            border: 1px solid black;
+            color: white;
+            flex-wrap: wrap;
+        }
+
+        .bgverde{
+            background-color: green;
+        }
+
+        .bgazul{
+            background-color: blue;
+        }
+
+        .bgvermelho{
+            background-color: red;
+        }
+        .flex-center{
+            display: flex;
+            justify-content: space-around;
+            align-items: start;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box bgverde flex-center">1</div>
+        <div class="box bgazul flex-center">2</div>
+        <div class="box bgvermelho flex-center">3</div>
+        
+       
+        
+      </div>
+         
+    
+</body>
+</html>
