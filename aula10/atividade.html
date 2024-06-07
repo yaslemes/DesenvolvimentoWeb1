@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    div.container {
+      background-color: rgb(226, 226, 226);
+      width: 100vw;
+      height: 100vh;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    div#cabecalho {
+      background-color: rgb(160, 160, 209);
+      width: 100%;
+      height: 100vh;
+      text-align: center;      
+      padding-top: 50px;
+    }
+    
+    div#secao1 {
+      background-color: rgb(88, 88, 138);
+      width: 100vw;
+      height: 100vh;
+      text-align: center;      
+      padding-top: 50px;
+    }
+    
+    div#secao2 {
+      background-color: rgb(45, 45, 100);
+      width: 100%;
+      height: 100vh;
+      text-align: center;      
+      padding-top: 50px;
+      
+      
+    }
+
+    div#contatos{
+      background-color: rgb(199, 199, 245);
+      width: 100%;
+      height: 100vh;
+      text-align: center;      
+      padding-top: 50px;
+    }
+    
+    ul.menu {
+     background-color: black;
+     list-style: none;
+     display: block;
+     margin: 0; 
+     padding: 0; 
+    
+
+    }
+    
+    ul.menu li {
+      display: inline;
+      
+    }
+
+    /*  */
+    .menu a {
+      display: inline-block;
+      
+      background-color: black;
+      color: white;      
+      padding: 20px 20px;
+      transition: 0.3s;
+      /* border: 1px solid black; */
+      text-decoration: none;
+    
+    }
+    .menu a:hover {
+      background-color: rgb(226, 226, 226);
+      color: black;
+      /* border: 1px solid black; */
+    }
+
+    nav {
+      background-color: black;
+      margin: 0 auto;
+    }
+
+    .principal{
+            height: 1000vw;
+            margin-top: 200px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            opacity:0.7 ;
+            background-image: url(https://ironberg.com.br/assets/images/ironberg-santos-5.jpeg);
+
+    }
+           
+
+    
+    
+
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <nav>
+      <ul class="menu">
+        <li><a href="#cabecalho">Cabecalho</a></li>
+        <li><a href="#secao1">Seção 1</a></li>
+        <li><a href="#secao2">Seção 2</a></li>
+        <li><a href="#contatos">Contatos</a></li>
+
+
+      </ul>
+    </nav>
+    
+
+    <div id="cabecalho">
+      <h3>Cabeçalho</h3>
+    </div>
+    
+    <div id="secao1">
+      <h3>Seção 1</h3>
+    </div>
+    
+    <div id="secao2">
+      <h3>Seção 2</h3>
+    </div>
+
+    <div id="contatos">
+        <h3>contatos</h3>
+      </div>
+  
+  </div>
+
+  <div class="principal">
+
+  </div>
+
+
+
+</body>
+
+</html>
