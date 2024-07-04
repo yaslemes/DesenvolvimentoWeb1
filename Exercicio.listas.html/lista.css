@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: rgb(44, 44, 44);
+}
+
+p {
+    color: rgb(191, 191, 191);
+
+}
+
+.container {
+    background-color: rgb(91, 158, 237);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-item{
+    border: .0625rem solid rgb(216, 216, 216);
+    padding: .625rem;
+    width: 31.25rem;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.list-item-image{
+    display: flex;
+    flex-shrink: 0;
+    border-radius: 6.25rem;
+    padding: .3125rem;
+    margin-right: .9375rem;
+}
+
+.list-item-content{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
