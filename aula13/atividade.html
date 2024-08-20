@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Formulário</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=New+Amsterdam&display=swap');
+
+        :root {
+            --altura-login: 40vw; 
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: flex;
+            width: 80%;
+            height: 80%;
+        }
+
+        .login {
+            display: flex;
+            flex-direction: column;
+            width: var(--altura-login);
+            padding: 80px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            color: black;
+            font-family: 'New Amsterdam', sans-serif;
+        }
+
+        p {
+            color: rgb(103, 103, 103);
+            margin-bottom: 15px;
+        }
+
+        .login form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login input {
+            border: 1px solid rgb(227, 216, 216);
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .enter {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            border: none;
+            padding: 15px;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+
+        .or {
+            text-align: center;
+            margin: 20px 0;
+            position: relative;
+            color: rgb(40, 38, 38);
+            font-size: 16px;
+        }
+
+        .or::before, .or::after {
+            content: '';
+            display: block;
+            height: 1px;
+            width: 100%;
+            background-color: rgb(227, 216, 216);
+            position: absolute;
+            top: 50%;
+        }
+
+        .or::before {
+            left: 0;
+        }
+
+        .or::after {
+            right: 0;
+        }
+
+        .or span {
+            padding: 0 10px;
+            background-color: white;
+        }
+
+        .continuando {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .google, .apple, .facebook {
+            border: 1px solid rgb(227, 216, 216);
+            display: flex;
+            align-items: center;
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 20px;
+            height: 50px;
+            font-size: 16px;
+            background-color: white;
+            cursor: pointer;
+            justify-content: center;
+        }
+
+        .redes {
+            width: 25px;
+            height: 25px;
+            margin-right: 10px;
+        }
+
+        .termos a {
+            text-decoration: underline;
+            color: black;
+        }
+
+        .imagem-container {
+            flex: 1;
+            background-image: url(https://i.pinimg.com/564x/5b/fd/66/5bfd6694ba106e0af8d33fd06cbf5fcd.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            color: white;
+        }
+
+        .imagem-container p {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            font-family: "New Amsterdam", sans-serif;
+            font-weight: 400;
+            font-size: 22px;
+            margin: 0;
+        }
+
+        .imagem-container .legenda {
+            position: -ms-page;
+            top: 180px;
+            left: 20px;
+            font-size: 15px;
+            color: rgb(205, 206, 206);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <h2>Faça login ou crie uma conta.</h2>
+            <p>Bem-vindo de volta! Insira seus dados para continuar.</p>
+            <form action="#" method="get">
+                <input type="email" id="email" placeholder="Seu email">
+                <input type="password" id="senha" placeholder="Senha">
+                <input class="enter" type="submit" value="Continuar">
+            </form>
+            <div class="or">
+                <span>ou</span>
+            </div>
+            <div class="continuando">
+                <button class="google">
+                    <img class="redes" src="google.ico" alt="google">
+                    Continue com Google
+                </button>
+                <button class="apple">
+                    <img class="redes" src="logotipo-da-apple.ico" alt="apple">
+                    Continue com Apple
+                </button>
+                <button class="facebook">
+                    <img class="redes" src="facebook.ico" alt="facebook">
+                    Continue com Facebook
+                </button>
+            </div>
+            <p class="termos">
+                Para continuar ou criar uma conta, você concorda com os
+                <a href="#">Termos & Condições</a> e
+                <a href="#">Política de Privacidade</a>.
+            </p>
+        </div>
+        <div class="imagem-container">
+           
+            <p>"O que é para ser nosso ninguém tira e o que não é a gente toma a força." "Não somos maus, somos inteligentes. Se é maldade pensar exclusivamente no nosso poder, então maldade é apenas uma dádiva necessária."
+
+                
+            </p>
+            <p class="legenda">Casa de Sonserina - Hogwarts</p>
+        </div>
+    </div>
+</body>
+</html>
