@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Multa por Velocidade</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    
+    <div class="container">
+        <div class="box calculation">
+            <h2>Calcular Multa</h2>
+            
+            <label for="maxvel">Velocidade máxima da via:</label>
+            <input type="number" id="maxvel" placeholder="" required>
+            
+            <label for="txtvel">Velocidade do veículo:</label>
+            <input type="number" id="txtvel" placeholder="" required>
+            
+            <input type="button" value="Calcular" onclick="calcular()">
+            <div id="res"></div>
+        </div>
+        
+        <div class="box info">
+            <h2>Informações de Multa</h2>
+            <p>Multa por excesso de velocidade:</p>
+            <ul>
+                <li> <strong>R$130,16 </strong>  - Até 20% acima do limite permitido </li>
+                <li> <strong>R$ 195,23</strong> - De 20% até 50% acima do limite permitido</li>
+                <li> <strong>R$ 880,41</strong> - Acima de 50% do limite permitido</li>
+            </ul>
+        </div>
+    </div>
+    
+   
+    <div class="full-message" id="fullMessage"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
