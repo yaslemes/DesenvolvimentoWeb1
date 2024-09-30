@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico de Comissões</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            margin: 0;
+            background-color: rgb(212, 234, 248); /* Fundo azul para a página */
+        }
+
+        .topo {
+            width: 100%;
+            height: 12%;
+            background-color: rgb(212, 234, 248); /* Cor do topo */
+            color: rgb(75, 216, 235);
+            display: flex;
+            align-items: center; /* Centraliza verticalmente */
+            justify-content: center; /* Centraliza horizontalmente */
+            
+        }
+
+        img {
+            height: 80%; /* Ajusta a altura da imagem */
+            margin-right: 10px; /* Espaçamento entre a imagem e o título */
+        }
+
+        h1 {
+            font-family: "Edu AU VIC WA NT Dots", cursive;
+            margin: 0;
+            font-size: 24px; /* Aumenta o tamanho da fonte */
+        }
+
+        #grafico-container {
+            width: 90%;
+            height: 90%;
+            margin: 0 auto; /* Centraliza o container */
+            background-color: #f3f1fb; /* Fundo do gráfico */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px; /* Espaçamento interno */
+            border-radius: 10px; 
+            
+           
+       
+        } 
+
+        @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&display=swap');
+    </style>
+</head>
+<body>
+    <div class="topo">
+        <img src="https://i.pinimg.com/originals/91/21/f3/9121f30436f31860ee094508a949d481.png" alt="">
+        <h1>Sapatinho de Cristal</h1>
+    </div>
+    <div id="grafico-container">
+        {{{body}}} <!-- Aqui você pode incluir seu gráfico -->
+    </div>
+</body>
+</html>

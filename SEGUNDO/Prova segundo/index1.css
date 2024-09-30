@@ -1,0 +1,67 @@
+:root{
+    --fonte: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --tamanho_fonte_titulo: 2rem;
+    --tamanho_fonte_txt: 1rem;
+    --tamanho_img: 35vh;
+}
+
+*{
+    padding: o;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 8vh;
+    color: white;
+    font-family: var(--fonte);
+}
+
+li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 2vw;
+}
+
+span{
+    padding: 2vw;
+}
+
+.secao_imagem{
+    background-image: url('https://file.notion.so/f/f/48a2f079-68a5-4bb5-99eb-51881ae2de09/f0a165ff-3bc0-444f-8084-6b0e76a31f64/imagem-fundo.avif?table=block&id=a8a7aeee-541e-4797-9ddf-1a03f6346383&spaceId=48a2f079-68a5-4bb5-99eb-51881ae2de09&expirationTimestamp=1727467200000&signature=qdo8-GisMVcVTH3hOhFfTYIBNv3es_ScsO6MfxD5FDE');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: var(--tamanho_img);
+}
+
+.secao_projetos{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2vh;
+    justify-content: center;
+    gap: 4vh;
+}
+
+.projeto_item{
+    width: 40vw;
+    border: 2px solid gray;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+p{
+    font-family: var(--fonte);
+    font-size: var(--tamanho_fonte_txt);
+}
+
+h1{
+    font-family: var(--fonte);
+    font-size: var(--tamanho_fonte_titulo);
+    text-align: center;
+    padding: 0.5rem;
+}
+

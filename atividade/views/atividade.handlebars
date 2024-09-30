@@ -1,0 +1,54 @@
+<div id="grafico-container">
+    <canvas id="meuGrafico"></canvas>
+</div>
+
+
+<script>
+    // Função para criar o gráfico
+   function criarGrafico(tipo = 'bar') {
+    const ctx = document.getElementById('meuGrafico').getContext('2d');
+    const meuGrafico = new Chart(ctx, {
+        type: tipo, // 'bar', 'line', 'pie'
+        data: {
+            labels: [
+                {{#each dados}}
+                '{{this.nome_pessoa}} {{this.data_venda}}',
+                {{/each}}
+            ],
+            datasets: [{
+                label: 'Comissão Funcionários',
+                data: [
+                    {{#each dados}}
+                    '{{this.comissao_venda}}',
+                    {{/each}}
+                ],
+                backgroundColor: 'rgb(212, 234, 248)',
+                borderColor: 'black',
+                borderWidth: 1
+            }]
+            
+
+        },
+        options: {
+            responsive: true,
+            scales: {
+                x: {
+                    ticks: {
+                        autoSkip: false, // Desativa a opção de pular rótulos automaticamente
+                        maxRotation: 0, // Define a rotação máxima dos rótulos como 0 (horizontal)
+                        minRotation: 0 // Define a rotação mínima dos rótulos como 0 (horizontal)
+                    }
+                },
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+}
+
+
+    // Inicializar gráfico
+    criarGrafico();
+
+</script>
