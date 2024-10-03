@@ -22,8 +22,6 @@ app.engine('handlebars', exphbs.engine({ defaultLayout: 'default' })); // Define
 app.set('view engine', 'handlebars'); // Define Handlebars como o motor de visualização
 app.set('views', './views'); // Define o diretório das views
 
-// Mensagem de log para verificar se o script está funcionando
-console.log("fds");
 
 // Conexão com o banco de dados
 connection.connect((err) => {
