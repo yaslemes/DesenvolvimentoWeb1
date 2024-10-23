@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+    />
+   
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Exemplo de Layout</title>
+  </head>
+  <body class="flex w-full">
+    <div>
+        <aside class="bg-gray-900 h-screen w-64 flex p-4 flex-col ">
+            <div class="flex mx-8 my-4">
+                <i class="ti ti-brand-tailwind text-3xl text-white mr-2"></i>
+                <h1 class="text-white text-2xl font-semibold">Tailwind</h1>
+            </div>
+
+            <ul class="mt-6 text-white">
+              <li class="flex items-center gap-2 mb-3 ">
+                <i class="ti ti-home text-2xl"></i>
+                <p>Início</p>
+              </li>
+              <li class="flex items-center gap-2 mb-3">
+                <i class="ti ti-address-book text-2xl"></i>
+                <p>Contato</p>
+              </li>
+              <li class="flex items-center gap-2 mb-3">
+                <i class="ti ti-info-circle text-2xl"></i>
+                <p>Sobre Nós</p>
+              </li>
+            </ul>
+        </aside>
+    </div>
+    <div class="w-full h-screen bg-gray-800 flex flex-col gap-4">
+        <div>
+            <header class="bg-gray-700 w-full h-20 flex items-center p-4">
+              <h1 class="text-gray-400 text-xl font-extrabold">Início</h1>
+              <p class="text-gray-500 text-sm">Página Principal</p>
+            </header>
+        </div>
+        <div>
+          <main class="m-3">
+            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, a. Quisquam expedita maxime impedit, molestiae saepe blanditiis officia velit odio vitae illum distinctio dolor maiores, id aperiam. Facilis, nulla sapiente?</p>
+          </main>
+        </div>
+    </div>
+  </body>
+</html>
