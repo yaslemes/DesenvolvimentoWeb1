@@ -3,11 +3,6 @@ const exphbs = require("express-handlebars"); // Importa o mecanismo de template
 const mysql2 = require("mysql2"); // Importa o módulo mysql2 para conexão com o banco de dados
 const app = express(); // Cria uma instância do aplicativo Express
 
-// Função para extrair e formatar a data
-function extrairData(data) {
-    const data2 = new Date(data); // Converte a string de data em um objeto Date
-    return data2.toISOString().split('T')[0]; // Retorna a data no formato 'YYYY-MM-DD'
-}
 
 // Configuração da conexão com o banco de dados MySQL
 const connection = mysql2.createConnection({
@@ -52,6 +47,12 @@ app.get("/", (req, res) => {
         res.render("atividade", { dados: result }); // Renderiza a view "atividade" passando os dados
     });
 });
+
+// Função para extrair e formatar a data
+function extrairData(data) {
+    const data2 = new Date(data); // Converte a string de data em um objeto Date
+    return data2.toISOString().split('T')[0]; // Retorna a data no formato 'YYYY-MM-DD'
+}
 
 // Inicia o servidor na porta 8080
 app.listen(8080);
