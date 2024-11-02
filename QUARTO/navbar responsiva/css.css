@@ -1,0 +1,106 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(118, 10, 164);
+}
+
+.navbar {
+    background-color: rgb(30, 8, 37);
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 50px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.nav-links-desktop {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links-desktop li {
+    padding: 0 15px;
+}
+
+.nav-links-desktop a,
+.nav-links-mobile a {
+    color: aliceblue;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.nav-links-desktop a:hover {
+    color: rgb(154, 78, 235);
+}
+
+/* Menu móvel oculto por padrão */
+.mobile-menu {
+    display: none; /* Oculto por padrão */
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    background-color: rgb(13, 1, 12);
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+/* Exibir o menu móvel quando a classe "show" for adicionada */
+.mobile-menu.show {
+    display: flex;
+}
+
+.nav-links-mobile {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.2rem;
+    width: 80%;
+    list-style: none;
+}
+
+.nav-links-mobile li {
+    border-bottom: 1px solid;
+    padding-bottom: 1.2rem;
+}
+
+.hamburguer,
+.close {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.close {
+    align-self: end;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+/* Exibir o botão de hambúrguer em telas menores */
+@media (max-width: 768px) {
+    .nav-links-desktop {
+        display: none; /* Esconde o menu desktop */
+    }
+
+    .hamburguer {
+        display:block;
+        
+    }
+}

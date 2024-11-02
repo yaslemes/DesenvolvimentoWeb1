@@ -49,6 +49,27 @@ nav a:hover{
     color: #dcdcdc;
 }
 
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    right:-100%;
+    height: 100vh;  
+    width: 280px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+    transition: all 1s;
+
+    z-index: 999;
+}
+
+
 .icon{
     fill: #fff;
 }
@@ -71,3 +92,21 @@ nav a:hover{
 .content p{    
     max-width: 400px;
 }
+
+@media (max-width: 639px) {
+    .hideMobile {
+        display: none;
+    }
+
+    .logotipo{
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    
+}
+@media (min-width: 640px) {
+    .hideDesktop {
+        display: none;
+    }
+}
+
